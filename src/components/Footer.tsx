@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://instagram.com/hdev.online" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-neon-green transition-colors"
