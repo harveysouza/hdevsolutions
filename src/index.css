@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-white antialiased;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+  
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-bold leading-tight;
+  }
+  
+  .heading-md {
+    @apply text-2xl md:text-3xl font-bold leading-tight;
+  }
+  
+  .subheading {
+    @apply text-lg md:text-xl text-gray-300 mt-4 max-w-3xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-medium transition-all duration-300 text-base;
+  }
+  
+  .btn-primary {
+    @apply btn bg-neon-green text-black hover:bg-opacity-90 hover:shadow-neon-hover;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-neon-blue text-black hover:bg-opacity-90;
+  }
+  
+  .btn-outline {
+    @apply btn bg-transparent border-2 border-white hover:border-neon-green hover:text-neon-green hover:shadow-neon-hover;
+  }
+  
+  .card {
+    @apply bg-gray-900 rounded-lg p-6 border border-gray-800 transition-all duration-300;
+  }
+  
+  .card-hover {
+    @apply hover:border-neon-green hover:shadow-neon-hover;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2 text-white hover:text-neon-green transition-colors duration-300;
+  }
+  
+  .nav-link.active {
+    @apply text-neon-green;
+  }
+
+  .input-field {
+    @apply w-full bg-gray-900 border border-gray-700 rounded-md px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-neon-green focus:ring-1 focus:ring-neon-green transition-all duration-300;
+  }
+}
